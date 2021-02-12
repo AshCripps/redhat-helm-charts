@@ -542,7 +542,7 @@ entries:
     - nodejs
     name: nodejs
     urls:
-    - https://redhat-developer.github.com/redhat-helm-charts/charts/nodejs-0.0.1.tgz
+    - https://raw.githubusercontent.com/AshCripps/redhat-helm-charts/test/charts/nodejs-0.0.1.tgz
     version: 0.0.1
   nodejs-ex-k:
   - apiVersion: v2
