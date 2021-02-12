@@ -36,6 +36,18 @@
           "title": "Replica Count",
           "type": "integer"
         },
+        "uri": {
+            "default": "https://github.com/nodeshift-starters/nodejs-rest-http",
+            "description": "Define the uri of the project you wish to deploy",
+            "title": "uri",
+            "type": "string"
+        },
+        "ref": {
+            "default": "main",
+            "description": "Ref of the repo to use",
+            "title": "Ref",
+            "type": "string"
+        },
         "serviceType": {
             "type": "string",
             "title": "Service Type",
@@ -129,6 +141,16 @@
         "pushSecret": {
             "type": ["string", "null"],
             "description": "Push secret name, used only if kind == 'DockerImage'"
+                }
+            }
+        },
+        "global": {
+            "type": "object",
+            "description": "Values that should be global across parent and dependent Helm charts",
+            "properties": {
+                "nameOverride": {
+                    "type": ["string", "null"],
+                    "description": "Overrides the release name. Impacts the image name (if image.name is left blank) and impacts the name of created OCP resources"
                 }
             }
         }
