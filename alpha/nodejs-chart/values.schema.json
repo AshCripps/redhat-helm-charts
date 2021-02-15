@@ -1,11 +1,5 @@
 {
-    "type": "object",
-    "required": [
-      "deploy",
-      "build",
-      "image"
-    ],
-    "additionalProperties": true,
+    "$schema": "http://json-schema.org/draft-07/schema",
     "properties": {
       "image": {
         "type": "object",
@@ -124,9 +118,9 @@
                     "description": "Determines how the image will be pushed",
                     "enum": ["ImageStreamTag", "DockerImage"]
                 },
-        "pushSecret": {
-            "type": ["string", "null"],
-            "description": "Push secret name, used only if kind == 'DockerImage'"
+                "pushSecret": {
+                    "type": ["string", "null"],
+                    "description": "Push secret name, used only if kind == 'DockerImage'"
                 }
             }
         }
