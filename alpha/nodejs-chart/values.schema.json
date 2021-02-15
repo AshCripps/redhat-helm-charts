@@ -122,6 +122,18 @@
                     "description": "Push secret name, used only if kind == 'DockerImage'"
                 }
             }
+        },
+        "pullSecret": {
+            "type": ["string", "null"],
+            "description": "The image pull secret. More information: https://docs.openshift.com/container-platform/4.6/openshift_images/managing_images/using-image-pull-secrets.html"
+        },
+        "env": {
+            "type": ["array", "null"],
+            "description": "Freeform env field. More information: https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/"
+        },
+        "resources": {
+            "type": ["object", "null"],
+            "description": "Freeform resources field. More information: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
         }
       }
       },
