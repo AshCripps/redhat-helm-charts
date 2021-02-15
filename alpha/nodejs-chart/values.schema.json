@@ -26,27 +26,13 @@
         "title": "Deploy",
         "description": "Specifiy deployment settings",
         "required": [
-          "replicaCount",
-          "uri",
-          "ref"
+          "replicas"
         ],
-        "replicaCount": {
+        "replicas": {
           "default": 1,
           "description": "Define number of nodejs pods running",
           "title": "Replica Count",
           "type": "integer"
-        },
-        "uri": {
-            "default": "https://github.com/nodeshift-starters/nodejs-rest-http",
-            "description": "Define the uri of the project you wish to deploy",
-            "title": "uri",
-            "type": "string"
-        },
-        "ref": {
-            "default": "main",
-            "description": "Ref of the repo to use",
-            "title": "Ref",
-            "type": "string"
         },
         "serviceType": {
             "type": "string",
