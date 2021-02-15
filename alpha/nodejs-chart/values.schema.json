@@ -129,17 +129,17 @@
             "description": "Push secret name, used only if kind == 'DockerImage'"
                 }
             }
-        },
-        "global": {
-            "type": "object",
-            "description": "Values that should be global across parent and dependent Helm charts",
-            "properties": {
-                "nameOverride": {
-                    "type": ["string", "null"],
-                    "description": "Overrides the release name. Impacts the image name (if image.name is left blank) and impacts the name of created OCP resources"
-                }
-            }
         }
+      },
+      "global": {
+          "type": "object",
+          "description": "Values that should be global across parent and dependent Helm charts",
+          "properties": {
+              "nameOverride": {
+                  "type": ["string", "null"],
+                  "description": "Overrides the release name. Impacts the image name (if image.name is left blank) and impacts the name of created OCP resources"
+              }
+          }
       }
-  }
+    }
 }
