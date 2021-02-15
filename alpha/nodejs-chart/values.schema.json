@@ -102,8 +102,7 @@
               "main",
               "master"
             ]
-          }
-        },
+          },
         "contextDir": {
             "type": "string",
             "title": "contextDir",
@@ -124,6 +123,7 @@
                 }
             }
         }
+      }
       },
       "global": {
           "type": "object",
